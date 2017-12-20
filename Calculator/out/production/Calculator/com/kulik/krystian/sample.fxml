@@ -1,0 +1,84 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<GridPane fx:controller="com.kulik.krystian.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="TOP_LEFT" hgap="10" vgap="10">
+
+    <padding>
+        <Insets top="20" bottom="20" left="20" right="20"/>
+
+    </padding>
+
+    <columnConstraints>
+        <ColumnConstraints percentWidth="20"/>
+        <ColumnConstraints percentWidth="20"/>
+        <ColumnConstraints percentWidth="20"/>
+        <ColumnConstraints percentWidth="20"/>
+        <ColumnConstraints percentWidth="20"/>
+
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints percentHeight="20"/>
+        <RowConstraints percentHeight="16"/>
+        <RowConstraints percentHeight="16"/>
+        <RowConstraints percentHeight="16"/>
+        <RowConstraints percentHeight="16"/>
+        <RowConstraints percentHeight="16"/>
+    </rowConstraints>
+
+
+    <StackPane fx:id="pane" GridPane.columnSpan="5" GridPane.columnIndex="0" GridPane.rowIndex="0"
+               style="-fx-border-color:blue;">
+        <Label fx:id="label" GridPane.halignment="RIGHT" textAlignment="RIGHT" text="0">
+            <font>
+                <Font name="Times New Roman bold" size="50"/>
+            </font>
+
+        </Label>
+    </StackPane>
+
+    <Button fx:id="digit0" prefWidth="Infinity" prefHeight="Infinity" text="0" GridPane.columnIndex="1"
+            GridPane.rowIndex="5"/>
+    <Button fx:id="digit1" prefWidth="Infinity" prefHeight="Infinity" text="1" GridPane.columnIndex="0"
+            GridPane.rowIndex="4"/>
+    <Button fx:id="digit2" prefWidth="Infinity" prefHeight="Infinity" text="2" GridPane.columnIndex="1"
+            GridPane.rowIndex="4"/>
+    <Button fx:id="digit3" prefWidth="Infinity" prefHeight="Infinity" text="3" GridPane.columnIndex="2"
+            GridPane.rowIndex="4"/>
+    <Button fx:id="digit4" prefWidth="Infinity" prefHeight="Infinity" text="4" GridPane.columnIndex="0"
+            GridPane.rowIndex="3"/>
+    <Button fx:id="digit5" prefWidth="Infinity" prefHeight="Infinity" text="5" GridPane.columnIndex="1"
+            GridPane.rowIndex="3"/>
+    <Button fx:id="digit6" prefWidth="Infinity" prefHeight="Infinity" text="6" GridPane.columnIndex="2"
+            GridPane.rowIndex="3"/>
+    <Button fx:id="digit7" prefWidth="Infinity" prefHeight="Infinity" text="7" GridPane.columnIndex="0"
+            GridPane.rowIndex="2"/>
+    <Button fx:id="digit8" prefWidth="Infinity" prefHeight="Infinity" text="8" GridPane.columnIndex="1"
+            GridPane.rowIndex="2"/>
+    <Button fx:id="digit9" prefWidth="Infinity" prefHeight="Infinity" text="9" GridPane.columnIndex="2"
+            GridPane.rowIndex="2"/>
+
+    <Button fx:id="sign" prefWidth="Infinity" prefHeight="Infinity" text="+/-" GridPane.columnIndex="0"
+            GridPane.rowIndex="5"/>
+    <Button fx:id="point" prefWidth="Infinity" prefHeight="Infinity" text="." GridPane.columnIndex="2"
+            GridPane.rowIndex="5"/>
+    <Button fx:id="divide" prefWidth="Infinity" prefHeight="Infinity" text="/" GridPane.columnIndex="3"
+            GridPane.rowIndex="2"/>
+    <Button fx:id="clear" prefWidth="Infinity" prefHeight="Infinity" text="C" GridPane.columnIndex="4"
+            GridPane.rowIndex="2"/>
+    <Button fx:id="multiply" prefWidth="Infinity" prefHeight="Infinity" text="x" GridPane.columnIndex="3"
+            GridPane.rowIndex="3"/>
+    <Button fx:id="subtract" prefWidth="Infinity" prefHeight="Infinity" text="-" GridPane.columnIndex="3"
+            GridPane.rowIndex="4"/>
+    <Button fx:id="add" prefWidth="Infinity" prefHeight="Infinity" text="+" GridPane.columnIndex="3"
+            GridPane.rowIndex="5"/>
+    <Button fx:id="equals" prefWidth="Infinity" prefHeight="Infinity" text="=" GridPane.columnIndex="4"
+            GridPane.rowIndex="4"
+            GridPane.rowSpan="2"/>
+    <Button fx:id="backspace" prefWidth="Infinity" prefHeight="Infinity" text="->" GridPane.columnIndex="4"
+            GridPane.rowIndex="3"/>
+
+
+</GridPane>
